@@ -15,7 +15,7 @@
 
 * `data.py` - загрузка датасета с HF, кеширование в `data/raw/`, маппинг `OR -> 0`, `CG -> 1`.
 * `baseline.py` - обучение TF-IDF + LogisticRegression, выдача вероятностей.
-* `train.py` - fine-tuning `distilbert-base-uncased`.
+* `train.py` - fine-tuning `DeBERTa-v3-base`.
 * `scaling.py` - формирует подвыборки, обучает обе модели, подбирает порог на validation, пишет `scaling_results.json`, сохраняет финальную BERT-модель и метрики на test.
 * `predict.py` - CLI для инференса на сохраненной модели.
 * `analysis.ipynb` - **графики** по результатам (scaling-кривая, confusion matrix, распределение вероятностей) и **выводы**.
